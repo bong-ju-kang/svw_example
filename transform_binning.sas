@@ -5,7 +5,7 @@ proc binning
     method=bucket
     ;
     input mortdue;
-    code file="&workspace_path./bnn/chap02_prep/code_bucket.sas";
+    code file="&workspace_path./model/code_bucket.sas";
     output out=out_bucket copyvars=(bad mortdue);
 run;
 
