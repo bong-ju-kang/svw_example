@@ -34,7 +34,7 @@ proc forest
     );
 
     /* 7) 스코어링용 SAS 코드 생성 */
-    code file='/workspaces/bnn/model/code_forest_hmeq.sas';
+    code file="&workspace_path./model/code_forest_hmeq.sas";
 
     /* 8) 학습된 모델 상태(Analytic Store) 저장 */
     savestate rstore=model.astore_forest_hmeq;
