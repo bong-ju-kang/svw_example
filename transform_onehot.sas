@@ -1,17 +1,17 @@
 
 %let onehot_job = 
-            case when job is null or job = '' then null 
-             when job = 'Mgr'     then 1 else 0 end as JOB_MGR,
-        case when job is null or job = '' then null 
-             when job = 'Office'  then 1 else 0 end as JOB_OFFICE,
-        case when job is null or job = '' then null 
-             when job = 'ProfExe' then 1 else 0 end as JOB_PROFEXE,
-        case when job is null or job = '' then null 
-             when job = 'Sales'   then 1 else 0 end as JOB_SALES,
-        case when job is null or job = '' then null 
-             when job = 'Self'    then 1 else 0 end as JOB_SELF,
-        case when job is null or job = '' then null 
-             when job = 'Other'   then 1 else 0 end as JOB_OTHER
+case when job is null or job = '' then null 
+ when job = 'Mgr'     then 1 else 0 end as JOB_MGR,
+case when job is null or job = '' then null 
+ when job = 'Office'  then 1 else 0 end as JOB_OFFICE,
+case when job is null or job = '' then null 
+ when job = 'ProfExe' then 1 else 0 end as JOB_PROFEXE,
+case when job is null or job = '' then null 
+ when job = 'Sales'   then 1 else 0 end as JOB_SALES,
+case when job is null or job = '' then null 
+ when job = 'Self'    then 1 else 0 end as JOB_SELF,
+case when job is null or job = '' then null 
+ when job = 'Other'   then 1 else 0 end as JOB_OTHER
 ;
 
 
